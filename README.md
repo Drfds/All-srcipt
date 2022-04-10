@@ -26,6 +26,20 @@ local GUI = library:new("SynapOver","[ RightControl ]")
 local Tab1 = GUI:Tap("Menu 1")
 local Tab2 = GUI:Tap("Menu 2")
 
-Tab1:Toggle("Toggle",nil,function(value)
-    print(value)
+Tab1:Toggle("Toggle",nil,function(a)
+    AutoFarm = a
+end)
+
+spawn(function()
+while wait(0.1) do
+if AutoFarm then
+pcall(function()
+
+local A_1 = "swingKatana"
+local Event = game:GetService("Players").LocalPlayer.ninjaEvent
+Event:FireServer(A_1)
+
+end)
+end
+end
 end)
