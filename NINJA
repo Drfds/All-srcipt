@@ -26,7 +26,7 @@ local GUI = library:new("SynapOver","[ RightControl ]")
 local Tab1 = GUI:Tap("Menu 1")
 local Tab2 = GUI:Tap("Menu 2")
 
-Tab1:Toggle("Toggle",nil,function(a)
+Tab1:Toggle("AutoFarm",nil,function(a)
     AutoFarm = a
 end)
 
@@ -43,3 +43,20 @@ end)
 end
 end
 end)
+Tab1:Label("test")
+Tab1:Toggle("AutoFarm",nil,function(b)
+    Tp = b
+end)
+
+spawn(function()
+while wait(3) do
+if Tp then
+pcall(function()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(69.309761, 310.543182, -42.6371193, 0.540442169, 4.21878532e-09, -0.841381192, -4.63266758e-10, 1, 4.71654982e-09, 0.841381192, -2.15923834e-09, 0.540442169)
+
+end)
+end
+end
+end)
+
