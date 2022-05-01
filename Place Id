@@ -4,8 +4,8 @@ if PlaceId == 3956818381 then
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Drfds/-Ninja-Legends/main/NINJA'))()
         else
 	if PlaceId == 2753915549 then
-	loadstring(game:HttpGet(''))()
-	game.Players.LocalPlayer:kick("สคริปไม่มีเกมนี้ ไอ้เวร")
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Drfds/All-srcipt/main/BLOX%20FRUIT'))()
+	game.Players.LocalPlayer:kick("สคริปไม่มีเกมนี้ครับ")
 	wait(1)
 	game:Shutdown()
 end
