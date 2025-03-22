@@ -575,41 +575,25 @@ local ModalElement = New("TextButton", {
 })
 
 --// Cursor
+--// Cursor
 local Cursor
 do
     Cursor = New("Frame", {
         AnchorPoint = Vector2.new(0.5, 0.5),
-        BackgroundColor3 = "White",
-        Size = UDim2.fromOffset(9, 1),
+        BackgroundColor3 = Color3.new(1, 1, 1), -- สีขาว
+        Size = UDim2.fromOffset(10, 10), -- ปรับขนาดให้เป็นวงกลมเล็ก
         Visible = false,
         ZIndex = 999,
         Parent = ScreenGui,
     })
-    New("Frame", {
-        AnchorPoint = Vector2.new(0.5, 0.5),
-        BackgroundColor3 = "Dark",
-        Position = UDim2.fromScale(0.5, 0.5),
-        Size = UDim2.new(1, 2, 1, 2),
-        ZIndex = 998,
+    
+    -- ใส่ UICorner เพื่อทำให้เป็นวงกลม
+    New("UICorner", {
+        CornerRadius = UDim.new(1, 0), -- 100% (ทำให้เป็นวงกลม)
         Parent = Cursor,
-    })
-
-    local CursorV = New("Frame", {
-        AnchorPoint = Vector2.new(0.5, 0.5),
-        BackgroundColor3 = "White",
-        Position = UDim2.fromScale(0.5, 0.5),
-        Size = UDim2.fromOffset(1, 9),
-        Parent = Cursor,
-    })
-    New("Frame", {
-        AnchorPoint = Vector2.new(0.5, 0.5),
-        BackgroundColor3 = "Dark",
-        Position = UDim2.fromScale(0.5, 0.5),
-        Size = UDim2.new(1, 2, 1, 2),
-        ZIndex = 998,
-        Parent = CursorV,
     })
 end
+
 
 --// Notification
 local NotificationArea
